@@ -1,0 +1,1 @@
+frames_cleanpass/flyingthings3d/TEST/A/0114/left/0008.png frames_cleanpass/flyingthings3d/TEST/A/0114/right/0008.png disparity/flyingthings3d/TEST/A/0114/left/0008.pfm 

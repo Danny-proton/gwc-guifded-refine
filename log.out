@@ -1,0 +1,471 @@
++ DATAPATH=/data/yyx/data/kitti/2015/data_scene_flow
++ CUDA_VISIBLE_DEVICES=5,7 python -u main.py --dataset kitti --datapath /data/yyx/data/kitti/2015/data_scene_flow --trainlist ./filenames/origin/kitti15_train.txt --testlist ./filenames/origin/kitti15_val.txt --epochs 1000 --lrepochs 400,600,800:10 --model gwcnet-gc --logdir ./checkpoints/kitti/ --loadckpt ./checkpoints/sceneflow/gwcnet-gc-color/checkpoint_000016.ckpt --test_batch_size 1
+creating new summary file
+loading model ./checkpoints/sceneflow/gwcnet-gc-color/checkpoint_000016.ckpt
+start at epoch 17
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/nn/functional.py:1890: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/nn/functional.py:1961: UserWarning: Default upsampling behavior when mode=trilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/nn/functional.py:52: UserWarning: size_average and reduce args will be deprecated, please use reduction='elementwise_mean' instead.
+  warnings.warn(warning.format(ret))
+Epoch 17/1000, Iter 0/90, train loss = 2.935, time = 15.617,losses averange=2.935
+Epoch 17/1000, Iter 89/90, train loss = 1.206, time = 0.672,losses averange=1.642
+avg_train_loss 1.641559037897322
+Epoch 17/1000, Iter 0/20, test loss = 0.186, time = 4.744739
+Epoch 17/1000, Iter 19/20, test loss = 0.203, time = 0.528831
+avg_test_scalars {'Thres3': [0.028811539942398667], 'Thres1': [0.21467920541763305], 'D3': [0.026731347548775375], 'loss': 0.24134815335273743, 'Thres2': [0.06446348866447807], 'EPE': [0.8098903864622116], 'D1': [0.10167609862983226]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 18/1000, Iter 0/90, train loss = 1.457, time = 2.669,losses averange=1.457
+Epoch 18/1000, Iter 89/90, train loss = 0.972, time = 0.661,losses averange=1.336
+avg_train_loss 1.3357558952437507
+Epoch 18/1000, Iter 0/20, test loss = 0.177, time = 2.125307
+Epoch 18/1000, Iter 19/20, test loss = 0.175, time = 0.553255
+avg_test_scalars {'Thres3': [0.026243337849155068], 'Thres1': [0.19963737353682517], 'D3': [0.02421110908035189], 'loss': 0.22518783286213875, 'Thres2': [0.05987470280379057], 'EPE': [0.7684992372989654], 'D1': [0.0921302953734994]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 19/1000, Iter 0/90, train loss = 0.844, time = 0.771,losses averange=0.844
+Epoch 19/1000, Iter 89/90, train loss = 1.073, time = 0.756,losses averange=1.153
+avg_train_loss 1.1529850098821852
+Epoch 19/1000, Iter 0/20, test loss = 0.158, time = 2.568945
+Epoch 19/1000, Iter 19/20, test loss = 0.174, time = 0.504317
+avg_test_scalars {'Thres3': [0.02534999025519937], 'Thres1': [0.19225255250930787], 'D3': [0.022848433745093644], 'loss': 0.2183933150023222, 'Thres2': [0.057597046298906204], 'EPE': [0.751589584350586], 'D1': [0.0872586602345109]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 20/1000, Iter 0/90, train loss = 0.944, time = 1.975,losses averange=0.944
+Epoch 20/1000, Iter 89/90, train loss = 0.928, time = 0.665,losses averange=1.247
+avg_train_loss 1.2467957582738665
+Epoch 20/1000, Iter 0/20, test loss = 0.176, time = 2.471723
+Epoch 20/1000, Iter 19/20, test loss = 0.201, time = 0.525649
+avg_test_scalars {'Thres3': [0.027908894000574946], 'Thres1': [0.23575900495052338], 'D3': [0.02553424381185323], 'loss': 0.24923594668507576, 'Thres2': [0.06578113627620041], 'EPE': [0.8421875894069671], 'D1': [0.09853216856718064]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 21/1000, Iter 0/90, train loss = 2.227, time = 0.727,losses averange=2.227
+Epoch 21/1000, Iter 89/90, train loss = 1.215, time = 0.742,losses averange=1.114
+avg_train_loss 1.1137907634178796
+Epoch 21/1000, Iter 0/20, test loss = 0.177, time = 2.347123
+Epoch 21/1000, Iter 19/20, test loss = 0.153, time = 0.517219
+avg_test_scalars {'Thres3': [0.022237780573777854], 'Thres1': [0.17614203467965125], 'D3': [0.019917131052352488], 'loss': 0.20020833984017372, 'Thres2': [0.048507429054006936], 'EPE': [0.7108218118548393], 'D1': [0.07927127033472062]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 22/1000, Iter 0/90, train loss = 1.194, time = 1.921,losses averange=1.194
+Epoch 22/1000, Iter 89/90, train loss = 0.849, time = 0.729,losses averange=1.359
+avg_train_loss 1.3591804934872522
+Epoch 22/1000, Iter 0/20, test loss = 0.184, time = 2.280205
+Epoch 22/1000, Iter 19/20, test loss = 0.176, time = 0.485915
+avg_test_scalars {'Thres3': [0.02554547202307731], 'Thres1': [0.1816953204572201], 'D3': [0.02393187815323472], 'loss': 0.21700487807393073, 'Thres2': [0.051204645354300735], 'EPE': [0.7466326460242272], 'D1': [0.08636287096887826]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 23/1000, Iter 0/90, train loss = 2.563, time = 0.754,losses averange=2.563
+Epoch 23/1000, Iter 89/90, train loss = 0.770, time = 0.698,losses averange=1.043
+avg_train_loss 1.0432402650515238
+Epoch 23/1000, Iter 0/20, test loss = 0.154, time = 2.600348
+Epoch 23/1000, Iter 19/20, test loss = 0.162, time = 0.568714
+avg_test_scalars {'Thres3': [0.0210444213822484], 'Thres1': [0.17409019879996776], 'D3': [0.019817999843508006], 'loss': 0.20286316908895968, 'Thres2': [0.04643358062021434], 'EPE': [0.7173738241195678], 'D1': [0.07851939909160137]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 24/1000, Iter 0/90, train loss = 4.281, time = 2.195,losses averange=4.281
+Epoch 24/1000, Iter 89/90, train loss = 1.287, time = 0.669,losses averange=1.049
+avg_train_loss 1.0491781334082286
+Epoch 24/1000, Iter 0/20, test loss = 0.175, time = 2.560247
+Epoch 24/1000, Iter 19/20, test loss = 0.153, time = 0.514892
+avg_test_scalars {'Thres3': [0.023356461455114184], 'Thres1': [0.17440855428576468], 'D3': [0.021763763250783087], 'loss': 0.20162169747054576, 'Thres2': [0.04893554551526904], 'EPE': [0.7124408140778542], 'D1': [0.08213012479245663]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 25/1000, Iter 0/90, train loss = 1.645, time = 0.950,losses averange=1.645
+Epoch 25/1000, Iter 89/90, train loss = 0.495, time = 0.681,losses averange=1.110
+avg_train_loss 1.1096056706375546
+Epoch 25/1000, Iter 0/20, test loss = 0.169, time = 2.256879
+Epoch 25/1000, Iter 19/20, test loss = 0.155, time = 0.514794
+avg_test_scalars {'Thres3': [0.022543488559313117], 'Thres1': [0.1740270834416151], 'D3': [0.02079358936753124], 'loss': 0.20173563286662102, 'Thres2': [0.04692954146303237], 'EPE': [0.7129393994808197], 'D1': [0.07873393930494785]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 26/1000, Iter 0/90, train loss = 0.808, time = 2.177,losses averange=0.808
+Epoch 26/1000, Iter 89/90, train loss = 1.056, time = 0.669,losses averange=0.928
+avg_train_loss 0.9278458062145445
+Epoch 26/1000, Iter 0/20, test loss = 0.154, time = 2.182087
+Epoch 26/1000, Iter 19/20, test loss = 0.154, time = 0.512851
+avg_test_scalars {'Thres3': [0.022164799715392293], 'Thres1': [0.18966080769896507], 'D3': [0.020607082988135517], 'loss': 0.2101786307990551, 'Thres2': [0.05102007635869086], 'EPE': [0.7409821256995202], 'D1': [0.0820093734189868]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 27/1000, Iter 0/90, train loss = 2.750, time = 0.720,losses averange=2.750
+Epoch 27/1000, Iter 89/90, train loss = 0.635, time = 0.729,losses averange=1.147
+avg_train_loss 1.1474267873499129
+Epoch 27/1000, Iter 0/20, test loss = 0.172, time = 2.404127
+Epoch 27/1000, Iter 19/20, test loss = 0.150, time = 0.508237
+avg_test_scalars {'Thres3': [0.023154284432530405], 'Thres1': [0.1878212235867977], 'D3': [0.021839591581374405], 'loss': 0.211752849817276, 'Thres2': [0.05076618567109108], 'EPE': [0.7429760903120041], 'D1': [0.08232407569885254]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 28/1000, Iter 0/90, train loss = 0.694, time = 2.235,losses averange=0.694
+Epoch 28/1000, Iter 89/90, train loss = 0.545, time = 0.691,losses averange=0.980
+avg_train_loss 0.9795557488997777
+Epoch 28/1000, Iter 0/20, test loss = 0.157, time = 2.535880
+Epoch 28/1000, Iter 19/20, test loss = 0.154, time = 0.514198
+avg_test_scalars {'Thres3': [0.021623773570172488], 'Thres1': [0.1770697735249996], 'D3': [0.0197512082522735], 'loss': 0.2001163586974144, 'Thres2': [0.04880746849812567], 'EPE': [0.7106708452105522], 'D1': [0.07821246460080147]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 29/1000, Iter 0/90, train loss = 0.863, time = 0.776,losses averange=0.863
+Epoch 29/1000, Iter 89/90, train loss = 0.665, time = 0.720,losses averange=0.948
+avg_train_loss 0.9481902062892914
+Epoch 29/1000, Iter 0/20, test loss = 0.155, time = 2.527085
+Epoch 29/1000, Iter 19/20, test loss = 0.155, time = 0.549191
+avg_test_scalars {'Thres3': [0.022046695370227097], 'Thres1': [0.19772658683359623], 'D3': [0.020284864585846663], 'loss': 0.21361473239958287, 'Thres2': [0.05156991658732295], 'EPE': [0.7564953356981278], 'D1': [0.08290203139185906]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 30/1000, Iter 0/90, train loss = 0.676, time = 2.611,losses averange=0.676
+Epoch 30/1000, Iter 89/90, train loss = 0.584, time = 0.727,losses averange=0.952
+avg_train_loss 0.9521125240458382
+Epoch 30/1000, Iter 0/20, test loss = 0.201, time = 2.173898
+Epoch 30/1000, Iter 19/20, test loss = 0.185, time = 0.561018
+avg_test_scalars {'Thres3': [0.02044230317696929], 'Thres1': [0.2031692426651716], 'D3': [0.01900268590543419], 'loss': 0.21287906356155872, 'Thres2': [0.04615557244978845], 'EPE': [0.7621900588274002], 'D1': [0.08885990642011166]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 31/1000, Iter 0/90, train loss = 0.948, time = 0.735,losses averange=0.948
+Epoch 31/1000, Iter 89/90, train loss = 0.577, time = 0.707,losses averange=0.889
+avg_train_loss 0.8885954952902264
+Epoch 31/1000, Iter 0/20, test loss = 0.151, time = 2.272082
+Epoch 31/1000, Iter 19/20, test loss = 0.142, time = 0.505443
+avg_test_scalars {'Thres3': [0.0199508314486593], 'Thres1': [0.1695198193192482], 'D3': [0.018841523746959864], 'loss': 0.19194544479250908, 'Thres2': [0.045029028924182056], 'EPE': [0.6883757501840592], 'D1': [0.07450056187808514]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 32/1000, Iter 0/90, train loss = 0.575, time = 2.150,losses averange=0.575
+Epoch 32/1000, Iter 89/90, train loss = 0.694, time = 0.658,losses averange=0.873
+avg_train_loss 0.8728148586220211
+Epoch 32/1000, Iter 0/20, test loss = 0.146, time = 2.335443
+Epoch 32/1000, Iter 19/20, test loss = 0.136, time = 0.516563
+avg_test_scalars {'Thres3': [0.020396362710744142], 'Thres1': [0.16914768889546394], 'D3': [0.01892084749415517], 'loss': 0.19112407341599463, 'Thres2': [0.04489170308224857], 'EPE': [0.688358011841774], 'D1': [0.0737600076943636]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 33/1000, Iter 0/90, train loss = 0.517, time = 0.738,losses averange=0.517
+Epoch 33/1000, Iter 89/90, train loss = 1.092, time = 0.694,losses averange=0.839
+avg_train_loss 0.8389549126227697
+Epoch 33/1000, Iter 0/20, test loss = 0.161, time = 2.351721
+Epoch 33/1000, Iter 19/20, test loss = 0.143, time = 0.506282
+avg_test_scalars {'Thres3': [0.020919431839138268], 'Thres1': [0.16355171874165536], 'D3': [0.01940604895353317], 'loss': 0.18698119409382344, 'Thres2': [0.04272222868166864], 'EPE': [0.6790967240929604], 'D1': [0.07253570221364498]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 34/1000, Iter 0/90, train loss = 0.878, time = 2.247,losses averange=0.878
+Epoch 34/1000, Iter 89/90, train loss = 0.563, time = 0.667,losses averange=0.797
+avg_train_loss 0.7974678006437089
+Epoch 34/1000, Iter 0/20, test loss = 0.147, time = 2.513005
+Epoch 34/1000, Iter 19/20, test loss = 0.138, time = 0.503959
+avg_test_scalars {'Thres3': [0.017755915399175138], 'Thres1': [0.17010624390095472], 'D3': [0.017128191282972695], 'loss': 0.18823319897055626, 'Thres2': [0.04024564241990447], 'EPE': [0.69320527613163], 'D1': [0.07224496267735958]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 35/1000, Iter 0/90, train loss = 0.559, time = 0.762,losses averange=0.559
+Epoch 35/1000, Iter 89/90, train loss = 0.551, time = 0.688,losses averange=0.831
+avg_train_loss 0.830559970272912
+Epoch 35/1000, Iter 0/20, test loss = 0.150, time = 2.220413
+Epoch 35/1000, Iter 19/20, test loss = 0.147, time = 0.542986
+avg_test_scalars {'Thres3': [0.018834912381134928], 'Thres1': [0.16276508420705796], 'D3': [0.017762639047577976], 'loss': 0.1855155322700739, 'Thres2': [0.040553864138200876], 'EPE': [0.6748427465558052], 'D1': [0.07289929073303938]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 36/1000, Iter 0/90, train loss = 0.967, time = 2.414,losses averange=0.967
+Epoch 36/1000, Iter 89/90, train loss = 0.946, time = 0.688,losses averange=0.846
+avg_train_loss 0.8456981923845079
+Epoch 36/1000, Iter 0/20, test loss = 0.151, time = 2.528917
+Epoch 36/1000, Iter 19/20, test loss = 0.142, time = 0.531977
+avg_test_scalars {'Thres3': [0.01917653370182961], 'Thres1': [0.16212782971560954], 'D3': [0.017887203535065056], 'loss': 0.1848912987858057, 'Thres2': [0.041138682328164575], 'EPE': [0.6722147315740585], 'D1': [0.07176882792264223]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 37/1000, Iter 0/90, train loss = 0.779, time = 0.760,losses averange=0.779
+Epoch 37/1000, Iter 89/90, train loss = 0.485, time = 0.893,losses averange=0.793
+avg_train_loss 0.7932734121878942
+Epoch 37/1000, Iter 0/20, test loss = 0.150, time = 2.240748
+Epoch 37/1000, Iter 19/20, test loss = 0.150, time = 0.516303
+avg_test_scalars {'Thres3': [0.020469573931768535], 'Thres1': [0.16957482174038888], 'D3': [0.01921086080837995], 'loss': 0.1929600194096565, 'Thres2': [0.04633229821920395], 'EPE': [0.6928173273801803], 'D1': [0.07387818079441785]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 38/1000, Iter 0/90, train loss = 1.242, time = 2.476,losses averange=1.242
+Epoch 38/1000, Iter 89/90, train loss = 0.511, time = 0.905,losses averange=0.820
+avg_train_loss 0.8200914839903514
+Epoch 38/1000, Iter 0/20, test loss = 0.184, time = 2.185477
+Epoch 38/1000, Iter 19/20, test loss = 0.156, time = 0.550665
+avg_test_scalars {'Thres3': [0.021252772328443824], 'Thres1': [0.1736934419721365], 'D3': [0.018422034801915288], 'loss': 0.19223332777619362, 'Thres2': [0.043349489104002714], 'EPE': [0.6987222254276275], 'D1': [0.07482111807912588]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 39/1000, Iter 0/90, train loss = 1.211, time = 0.707,losses averange=1.211
+Epoch 39/1000, Iter 89/90, train loss = 0.829, time = 0.668,losses averange=0.864
+avg_train_loss 0.8642254819472631
+Epoch 39/1000, Iter 0/20, test loss = 0.199, time = 2.292325
+Epoch 39/1000, Iter 19/20, test loss = 0.182, time = 0.514630
+avg_test_scalars {'Thres3': [0.020965325622819365], 'Thres1': [0.1834285758435726], 'D3': [0.019335433538071812], 'loss': 0.20248517915606498, 'Thres2': [0.04666987769305706], 'EPE': [0.7289254039525985], 'D1': [0.08390534520149232]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 40/1000, Iter 0/90, train loss = 0.495, time = 2.287,losses averange=0.495
+Epoch 40/1000, Iter 89/90, train loss = 0.345, time = 0.682,losses averange=0.780
+avg_train_loss 0.7801203529040018
+Epoch 40/1000, Iter 0/20, test loss = 0.150, time = 2.499923
+Epoch 40/1000, Iter 19/20, test loss = 0.149, time = 0.535512
+avg_test_scalars {'Thres3': [0.020440652407705782], 'Thres1': [0.1698341604322195], 'D3': [0.018799008731730283], 'loss': 0.19104064926505088, 'Thres2': [0.044475571671500805], 'EPE': [0.6868670761585236], 'D1': [0.07320127375423909]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 41/1000, Iter 0/90, train loss = 0.714, time = 0.735,losses averange=0.714
+Epoch 41/1000, Iter 89/90, train loss = 0.587, time = 0.676,losses averange=0.753
+avg_train_loss 0.7527351289987564
+Epoch 41/1000, Iter 0/20, test loss = 0.151, time = 2.498008
+Epoch 41/1000, Iter 19/20, test loss = 0.147, time = 0.555954
+avg_test_scalars {'Thres3': [0.02159713169094175], 'Thres1': [0.16315112300217152], 'D3': [0.019985246937721968], 'loss': 0.18821875527501106, 'Thres2': [0.04449031227268278], 'EPE': [0.6788098499178886], 'D1': [0.07336504124104977]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 42/1000, Iter 0/90, train loss = 0.667, time = 2.588,losses averange=0.667
+Epoch 42/1000, Iter 89/90, train loss = 1.677, time = 0.748,losses averange=0.902
+avg_train_loss 0.9024391038550271
+Epoch 42/1000, Iter 0/20, test loss = 0.161, time = 2.648705
+Epoch 42/1000, Iter 19/20, test loss = 0.146, time = 0.508780
+avg_test_scalars {'Thres3': [0.019584518764168023], 'Thres1': [0.15696097686886787], 'D3': [0.018001101328991354], 'loss': 0.1837753180414438, 'Thres2': [0.04179098010063172], 'EPE': [0.6696172833442688], 'D1': [0.07143396697938442]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 43/1000, Iter 0/90, train loss = 0.650, time = 0.748,losses averange=0.650
+Epoch 43/1000, Iter 89/90, train loss = 0.594, time = 0.685,losses averange=0.754
+avg_train_loss 0.7538811617427402
+Epoch 43/1000, Iter 0/20, test loss = 0.154, time = 2.256855
+Epoch 43/1000, Iter 19/20, test loss = 0.168, time = 0.512374
+avg_test_scalars {'Thres3': [0.020036018872633576], 'Thres1': [0.16835024170577526], 'D3': [0.01901145321317017], 'loss': 0.19206245206296443, 'Thres2': [0.04406527527607977], 'EPE': [0.6913199827075005], 'D1': [0.0753038078546524]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 44/1000, Iter 0/90, train loss = 0.736, time = 2.142,losses averange=0.736
+Epoch 44/1000, Iter 89/90, train loss = 1.028, time = 0.759,losses averange=0.821
+avg_train_loss 0.8212812489933438
+Epoch 44/1000, Iter 0/20, test loss = 0.141, time = 2.586863
+Epoch 44/1000, Iter 19/20, test loss = 0.141, time = 0.511936
+avg_test_scalars {'Thres3': [0.019678093679249286], 'Thres1': [0.1562609665095806], 'D3': [0.017765427590347826], 'loss': 0.18411098159849643, 'Thres2': [0.04236085875891149], 'EPE': [0.6707095399498939], 'D1': [0.06862214365974069]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 45/1000, Iter 0/90, train loss = 0.764, time = 0.745,losses averange=0.764
+Epoch 45/1000, Iter 89/90, train loss = 0.410, time = 0.660,losses averange=0.909
+avg_train_loss 0.9085744976997375
+Epoch 45/1000, Iter 0/20, test loss = 0.160, time = 2.556827
+Epoch 45/1000, Iter 19/20, test loss = 0.156, time = 0.517465
+avg_test_scalars {'Thres3': [0.020907170698046686], 'Thres1': [0.15487150736153127], 'D3': [0.01924034869298339], 'loss': 0.1861972477287054, 'Thres2': [0.0422693413682282], 'EPE': [0.6748050943017005], 'D1': [0.07210232028737665]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 46/1000, Iter 0/90, train loss = 0.709, time = 2.294,losses averange=0.709
+Epoch 46/1000, Iter 89/90, train loss = 0.463, time = 0.698,losses averange=0.813
+avg_train_loss 0.8130811436308755
+Epoch 46/1000, Iter 0/20, test loss = 0.159, time = 2.308663
+Epoch 46/1000, Iter 19/20, test loss = 0.152, time = 0.516710
+avg_test_scalars {'Thres3': [0.020728563494049012], 'Thres1': [0.1652067307382822], 'D3': [0.019002458569593726], 'loss': 0.1900743406265974, 'Thres2': [0.04306964976713061], 'EPE': [0.6901701435446739], 'D1': [0.07443258883431554]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 47/1000, Iter 0/90, train loss = 0.964, time = 0.781,losses averange=0.964
+Epoch 47/1000, Iter 89/90, train loss = 0.662, time = 0.701,losses averange=0.837
+avg_train_loss 0.837283812628852
+Epoch 47/1000, Iter 0/20, test loss = 0.158, time = 2.455339
+Epoch 47/1000, Iter 19/20, test loss = 0.136, time = 0.515817
+avg_test_scalars {'Thres3': [0.021383946668356656], 'Thres1': [0.1548579901456833], 'D3': [0.019658723869360982], 'loss': 0.1826446633785963, 'Thres2': [0.04294108934700489], 'EPE': [0.6668094873428345], 'D1': [0.07169006047770381]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 48/1000, Iter 0/90, train loss = 1.156, time = 2.483,losses averange=1.156
+Epoch 48/1000, Iter 89/90, train loss = 1.373, time = 0.685,losses averange=0.786
+avg_train_loss 0.7855141891373528
+Epoch 48/1000, Iter 0/20, test loss = 0.161, time = 2.362105
+Epoch 48/1000, Iter 19/20, test loss = 0.142, time = 0.526730
+avg_test_scalars {'Thres3': [0.01944781495258212], 'Thres1': [0.15860474221408366], 'D3': [0.017668871278874575], 'loss': 0.18306669928133487, 'Thres2': [0.041354179149493575], 'EPE': [0.6716259971261025], 'D1': [0.07350124819204211]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 49/1000, Iter 0/90, train loss = 0.392, time = 0.747,losses averange=0.392
+Epoch 49/1000, Iter 89/90, train loss = 0.410, time = 0.681,losses averange=0.728
+avg_train_loss 0.7275198184781604
+Epoch 49/1000, Iter 0/20, test loss = 0.170, time = 2.158296
+Epoch 49/1000, Iter 19/20, test loss = 0.146, time = 0.516576
+avg_test_scalars {'Thres3': [0.021882143104448915], 'Thres1': [0.1682776402682066], 'D3': [0.019976130686700344], 'loss': 0.1940541509538889, 'Thres2': [0.04413459892384708], 'EPE': [0.6954628512263298], 'D1': [0.07247679829597473]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 50/1000, Iter 0/90, train loss = 3.258, time = 2.171,losses averange=3.258
+Epoch 50/1000, Iter 89/90, train loss = 0.357, time = 0.712,losses averange=0.772
+avg_train_loss 0.7721825904316373
+Epoch 50/1000, Iter 0/20, test loss = 0.153, time = 2.299244
+Epoch 50/1000, Iter 19/20, test loss = 0.139, time = 0.506130
+avg_test_scalars {'Thres3': [0.01997668920084834], 'Thres1': [0.15124744698405265], 'D3': [0.018010658421553673], 'loss': 0.17918545193970203, 'Thres2': [0.041037167934700844], 'EPE': [0.6590617284178734], 'D1': [0.06945758908987046]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 51/1000, Iter 0/90, train loss = 0.389, time = 0.747,losses averange=0.389
+Epoch 51/1000, Iter 89/90, train loss = 0.819, time = 0.850,losses averange=0.728
+avg_train_loss 0.7279834777116776
+Epoch 51/1000, Iter 0/20, test loss = 0.158, time = 2.211518
+Epoch 51/1000, Iter 19/20, test loss = 0.142, time = 0.500342
+avg_test_scalars {'Thres3': [0.01837111378554255], 'Thres1': [0.15036472231149672], 'D3': [0.016494554770179092], 'loss': 0.17776640094816684, 'Thres2': [0.03914587418548763], 'EPE': [0.6546149209141732], 'D1': [0.06736332606524228]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 52/1000, Iter 0/90, train loss = 0.326, time = 2.459,losses averange=0.326
+Epoch 52/1000, Iter 89/90, train loss = 0.605, time = 0.717,losses averange=0.767
+avg_train_loss 0.7666959570513832
+Epoch 52/1000, Iter 0/20, test loss = 0.166, time = 2.561116
+Epoch 52/1000, Iter 19/20, test loss = 0.158, time = 0.506591
+avg_test_scalars {'Thres3': [0.018941926676779984], 'Thres1': [0.15534747205674648], 'D3': [0.017294382979162037], 'loss': 0.18234555274248124, 'Thres2': [0.040562912030145525], 'EPE': [0.6685860469937325], 'D1': [0.07090937159955502]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 53/1000, Iter 0/90, train loss = 0.695, time = 0.738,losses averange=0.695
+Epoch 53/1000, Iter 89/90, train loss = 0.315, time = 0.701,losses averange=0.684
+avg_train_loss 0.6838054607311884
+Epoch 53/1000, Iter 0/20, test loss = 0.142, time = 2.330581
+Epoch 53/1000, Iter 19/20, test loss = 0.151, time = 0.623664
+avg_test_scalars {'Thres3': [0.018959117634221912], 'Thres1': [0.16133600883185864], 'D3': [0.01717352387495339], 'loss': 0.18230585493147372, 'Thres2': [0.041589111741632226], 'EPE': [0.6666968256235123], 'D1': [0.06943403938785195]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 54/1000, Iter 0/90, train loss = 0.306, time = 2.421,losses averange=0.306
+Epoch 54/1000, Iter 89/90, train loss = 0.659, time = 0.797,losses averange=0.772
+avg_train_loss 0.7715328074163861
+Epoch 54/1000, Iter 0/20, test loss = 0.142, time = 2.049181
+Epoch 54/1000, Iter 19/20, test loss = 0.153, time = 0.527938
+avg_test_scalars {'Thres3': [0.018457643187139182], 'Thres1': [0.15710438564419746], 'D3': [0.017244853894226253], 'loss': 0.1812829528003931, 'Thres2': [0.03948919400572777], 'EPE': [0.6628984436392784], 'D1': [0.06890650596469641]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 55/1000, Iter 0/90, train loss = 0.605, time = 0.775,losses averange=0.605
+Epoch 55/1000, Iter 89/90, train loss = 0.526, time = 0.684,losses averange=0.749
+avg_train_loss 0.7492635630899005
+Epoch 55/1000, Iter 0/20, test loss = 0.146, time = 2.351167
+Epoch 55/1000, Iter 19/20, test loss = 0.150, time = 0.612223
+avg_test_scalars {'Thres3': [0.020210704929195345], 'Thres1': [0.1620133589953184], 'D3': [0.018953484599478543], 'loss': 0.1855410486459732, 'Thres2': [0.04388973140157759], 'EPE': [0.6708627417683601], 'D1': [0.06958871353417635]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 56/1000, Iter 0/90, train loss = 0.626, time = 2.289,losses averange=0.626
+Epoch 56/1000, Iter 89/90, train loss = 0.490, time = 0.723,losses averange=0.763
+avg_train_loss 0.76291893058353
+Epoch 56/1000, Iter 0/20, test loss = 0.132, time = 2.063766
+Epoch 56/1000, Iter 19/20, test loss = 0.141, time = 0.501001
+avg_test_scalars {'Thres3': [0.01995230212341994], 'Thres1': [0.14985661059617997], 'D3': [0.017577567510306834], 'loss': 0.1778759051114321, 'Thres2': [0.040941597102209924], 'EPE': [0.6562849223613739], 'D1': [0.06487261075526476]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 57/1000, Iter 0/90, train loss = 0.956, time = 0.804,losses averange=0.956
+Epoch 57/1000, Iter 89/90, train loss = 3.030, time = 0.682,losses averange=0.779
+avg_train_loss 0.7787945104969872
+Epoch 57/1000, Iter 0/20, test loss = 0.157, time = 2.528389
+Epoch 57/1000, Iter 19/20, test loss = 0.152, time = 0.519857
+avg_test_scalars {'Thres3': [0.02061265882803127], 'Thres1': [0.16041822507977485], 'D3': [0.018802815489470957], 'loss': 0.18445432782173157, 'Thres2': [0.04566505905240774], 'EPE': [0.6720299184322357], 'D1': [0.07144399639219046]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 58/1000, Iter 0/90, train loss = 0.941, time = 2.109,losses averange=0.941
+Epoch 58/1000, Iter 89/90, train loss = 0.381, time = 0.758,losses averange=0.755
+avg_train_loss 0.7545664558808008
+Epoch 58/1000, Iter 0/20, test loss = 0.146, time = 2.347359
+Epoch 58/1000, Iter 19/20, test loss = 0.158, time = 0.558901
+avg_test_scalars {'Thres3': [0.021425152965821325], 'Thres1': [0.18077085316181182], 'D3': [0.019319673674181102], 'loss': 0.19845414832234382, 'Thres2': [0.04683257336728275], 'EPE': [0.7129432156682014], 'D1': [0.07223536428064108]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 59/1000, Iter 0/90, train loss = 0.906, time = 0.780,losses averange=0.906
+Epoch 59/1000, Iter 89/90, train loss = 0.455, time = 0.688,losses averange=0.759
+avg_train_loss 0.7591354386674033
+Epoch 59/1000, Iter 0/20, test loss = 0.155, time = 2.296608
+Epoch 59/1000, Iter 19/20, test loss = 0.146, time = 0.525950
+avg_test_scalars {'Thres3': [0.01781222561839968], 'Thres1': [0.14685830622911453], 'D3': [0.01645931717939675], 'loss': 0.17478786446154118, 'Thres2': [0.0375750785227865], 'EPE': [0.6493355125188828], 'D1': [0.06452717306092381]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 60/1000, Iter 0/90, train loss = 1.022, time = 2.163,losses averange=1.022
+Epoch 60/1000, Iter 89/90, train loss = 0.967, time = 0.717,losses averange=0.698
+avg_train_loss 0.698397547337744
+Epoch 60/1000, Iter 0/20, test loss = 0.132, time = 2.333112
+Epoch 60/1000, Iter 19/20, test loss = 0.147, time = 0.539040
+avg_test_scalars {'Thres3': [0.018072550417855382], 'Thres1': [0.15061240121722222], 'D3': [0.016867889859713613], 'loss': 0.17588830590248108, 'Thres2': [0.03801051899790764], 'EPE': [0.6526685550808906], 'D1': [0.06669606175273657]}
+downscale epochs: [400, 600, 800], downscale rate: 10.0
+setting learning rate to 0.001
+current rate is  0.001
+192
+Epoch 61/1000, Iter 0/90, train loss = 1.012, time = 0.739,losses averange=1.012
+Epoch 61/1000, Iter 89/90, train loss = 0.591, time = 0.865,losses averange=0.725
+Traceback (most recent call last):
+  File "main.py", line 369, in <module>
+    train()
+  File "main.py", line 158, in train
+    torch.save(checkpoint_data, "{}/checkpoint_{:0>6}.ckpt".format(args.logdir, epoch_idx))
+  File "/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/serialization.py", line 209, in save
+    return _with_file_like(f, "wb", lambda f: _save(obj, f, pickle_module, pickle_protocol))
+  File "/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/serialization.py", line 134, in _with_file_like
+    return body(f)
+  File "/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/serialization.py", line 209, in <lambda>
+    return _with_file_like(f, "wb", lambda f: _save(obj, f, pickle_module, pickle_protocol))
+  File "/data/yyx/anaconda3/envs/yyx/lib/python3.5/site-packages/torch/serialization.py", line 288, in _save
+    serialized_storages[key]._write_file(f, _should_read_directly(f))
+RuntimeError: Unknown error -1
